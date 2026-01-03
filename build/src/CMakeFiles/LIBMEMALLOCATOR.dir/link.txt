@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLIBMEMALLOCATOR.a CMakeFiles/LIBMEMALLOCATOR.dir/allocator.c.o
+/usr/bin/ranlib libLIBMEMALLOCATOR.a

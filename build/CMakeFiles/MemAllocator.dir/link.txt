@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/MemAllocator.dir/main.c.o -o MemAllocator 

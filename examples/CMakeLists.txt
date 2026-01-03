@@ -1,0 +1,3 @@
+add_executable(MemAllocationExample main.c)
+
+target_link_libraries(MemAllocationExample PRIVATE LIBMEMALLOCATOR)

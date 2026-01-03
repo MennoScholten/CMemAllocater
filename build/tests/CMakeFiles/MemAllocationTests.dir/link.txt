@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MemAllocationTests.dir/allocatorTests.cpp.o -o MemAllocationTests  ../src/libLIBMEMALLOCATOR.a ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a 
