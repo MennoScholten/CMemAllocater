@@ -1,2 +1,3 @@
-MemAllocationTests 3 0.00093404
+MemAllocationTests 5 0
 ---
+MemAllocationTests

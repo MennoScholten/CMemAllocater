@@ -374,4 +374,6 @@ tests/CMakeFiles/MemAllocationTests.dir/allocatorTests.cpp.o
  /mnt/data/Programming/C/MemAllocator/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h
  /mnt/data/Programming/C/MemAllocator/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h
  /mnt/data/Programming/C/MemAllocator/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /mnt/data/Programming/C/MemAllocator/include/allocater.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
 

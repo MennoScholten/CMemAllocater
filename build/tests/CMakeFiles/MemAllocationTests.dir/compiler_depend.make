@@ -372,7 +372,9 @@ tests/CMakeFiles/MemAllocationTests.dir/allocatorTests.cpp.o: ../tests/allocator
   _deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
   _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
-  _deps/googletest-src/googletest/include/gtest/gtest_prod.h
+  _deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+  ../include/allocater.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
 
 
 _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
@@ -653,6 +655,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
@@ -772,6 +776,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/bits/std_mutex.h:
+
+../include/allocater.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
