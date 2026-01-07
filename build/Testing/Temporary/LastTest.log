@@ -1,10 +1,10 @@
-Start testing: Jan 05 21:27 CET
+Start testing: Jan 07 19:15 CET
 ----------------------------------------------------------
 1/1 Testing: MemAllocationTests
 1/1 Test: MemAllocationTests
 Command: "/mnt/data/Programming/C/MemAllocator/build/tests/MemAllocationTests"
 Directory: /mnt/data/Programming/C/MemAllocator/build/tests
-"MemAllocationTests" start time: Jan 05 21:27 CET
+"MemAllocationTests" start time: Jan 07 19:15 CET
 Output:
 ----------------------------------------------------------
 Running main() from /mnt/data/Programming/C/MemAllocator/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -15,19 +15,21 @@ Running main() from /mnt/data/Programming/C/MemAllocator/build/_deps/googletest-
 Incorrect size given: 0
 [       OK ] MemAllocater.CheckNullAllocation (0 ms)
 [ RUN      ] MemAllocater.CheckInvSizeAllocation
-Mem First pointer 0x75bea50ff010
-Hdr First pointer 0x75bea50ff010
-Size of Allocation -1
+Mem First pointer 0x72bc71eff010
+Hdr First pointer 0x72bc71eff010
+Size of Allocation 18446744073709551615
+Total Allocation 23
 Size of Header 24
-Return pointer 0x75bea50ff028
+Return pointer 0x72bc71eff028
 [       OK ] MemAllocater.CheckInvSizeAllocation (0 ms)
 [ RUN      ] MemAllocater.CheckOutOfMemoryAllocation
 Out of memory
 [       OK ] MemAllocater.CheckOutOfMemoryAllocation (0 ms)
 [ RUN      ] MemAllocater.CheckMemPointerReturned
 Size of Allocation 10
+Total Allocation 57
 Size of Header 24
-Return pointer 0x75bea50ff028
+Return pointer 0x72bc71eff028
 Value of pInt: 
 [       OK ] MemAllocater.CheckMemPointerReturned (0 ms)
 [ RUN      ] MemAllocater.CheckMemPointerReturnedAfterMultiAlloc
@@ -43,6 +45,15 @@ Expected: (pInt2) != (nullptr), actual: NULL vs (nullptr)
 /mnt/data/Programming/C/MemAllocator/tests/allocatorTests.cpp:37: Failure
 Expected: (pInt3) != (nullptr), actual: NULL vs (nullptr)
 
+/mnt/data/Programming/C/MemAllocator/tests/allocatorTests.cpp:38: Failure
+Expected: (pInt) != (pInt2), actual: NULL vs NULL
+
+/mnt/data/Programming/C/MemAllocator/tests/allocatorTests.cpp:39: Failure
+Expected: (pInt2) != (pInt3), actual: NULL vs NULL
+
+/mnt/data/Programming/C/MemAllocator/tests/allocatorTests.cpp:40: Failure
+Expected: (pInt3) != (pInt), actual: NULL vs NULL
+
 [  FAILED  ] MemAllocater.CheckMemPointerReturnedAfterMultiAlloc (0 ms)
 [----------] 5 tests from MemAllocater (0 ms total)
 
@@ -54,11 +65,11 @@ Expected: (pInt3) != (nullptr), actual: NULL vs (nullptr)
 
  1 FAILED TEST
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"MemAllocationTests" end time: Jan 05 21:27 CET
+"MemAllocationTests" end time: Jan 07 19:15 CET
 "MemAllocationTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jan 05 21:27 CET
+End testing: Jan 07 19:15 CET

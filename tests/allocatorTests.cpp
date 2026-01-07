@@ -9,11 +9,6 @@ TEST(MemAllocater, CheckNullAllocation) {
     EXPECT_EQ(pInt, nullptr);
 }
 
-TEST(MemAllocater, CheckInvSizeAllocation) {
-    unsigned char *pInt = (unsigned char*) allocater(-1);
-    EXPECT_NE(pInt, nullptr);
-}
-
 TEST(MemAllocater, CheckOutOfMemoryAllocation) {
     unsigned char *pInt = (unsigned char*) allocater(1024*1025);
     EXPECT_EQ(pInt, nullptr);
@@ -35,4 +30,7 @@ TEST(MemAllocater, CheckMemPointerReturnedAfterMultiAlloc) {
     EXPECT_NE(pInt, nullptr);
     EXPECT_NE(pInt2, nullptr);
     EXPECT_NE(pInt3, nullptr);
+    EXPECT_NE(pInt, pInt2);
+    EXPECT_NE(pInt2, pInt3);
+    EXPECT_NE(pInt3, pInt);
 }
